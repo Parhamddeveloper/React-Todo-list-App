@@ -1,0 +1,163 @@
+body {
+  background: #e27396;
+  background: linear-gradient(
+      129deg,
+      rgba(226, 115, 150, 1) 0%,
+      rgba(0, 119, 182, 1) 65%,
+      rgba(0, 180, 216, 1) 100%
+    )
+    no-repeat fixed;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+
+  background-color: rgba(0, 119, 182, 1);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(226, 115, 150, 1);
+}
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input::placeholder {
+  color: white;
+}
+input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+@media screen and (min-width: 960px) {
+  .EditTaskContainer::-webkit-scrollbar {
+    width: 7px;
+  }
+  .EditTaskContainer::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+
+    background-color: #bb8493;
+  }
+}
+
+.PercentDiv {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(red var(--progress), gray 0deg);
+  font-size: 0;
+  animation: 0.4s ease-out turn_in reverse;
+}
+
+.PercentDiv::after {
+  content: attr(data-progress);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  border-radius: 50%;
+  background: white;
+  font-size: 1rem;
+  text-align: center;
+}
+@keyframes turn_in {
+  5% {
+    background: conic-gradient(red calc(var(--progress) * 0.95), gray 0deg);
+  }
+  10% {
+    background: conic-gradient(red calc(var(--progress) * 0.9), gray 0deg);
+  }
+  15% {
+    background: conic-gradient(red calc(var(--progress) * 0.85), gray 0deg);
+  }
+  20% {
+    background: conic-gradient(red calc(var(--progress) * 0.8), gray 0deg);
+  }
+  25% {
+    background: conic-gradient(red calc(var(--progress) * 0.75), gray 0deg);
+  }
+  30% {
+    background: conic-gradient(red calc(var(--progress) * 0.7), gray 0deg);
+  }
+  35% {
+    background: conic-gradient(red calc(var(--progress) * 0.65), gray 0deg);
+  }
+  40% {
+    background: conic-gradient(red calc(var(--progress) * 0.6), gray 0deg);
+  }
+  45% {
+    background: conic-gradient(red calc(var(--progress) * 0.55), gray 0deg);
+  }
+  50% {
+    background: conic-gradient(red calc(var(--progress) * 0.5), gray 0deg);
+  }
+  55% {
+    background: conic-gradient(red calc(var(--progress) * 0.45), gray 0deg);
+  }
+  60% {
+    background: conic-gradient(red calc(var(--progress) * 0.4), gray 0deg);
+  }
+  65% {
+    background: conic-gradient(red calc(var(--progress) * 0.35), gray 0deg);
+  }
+  70% {
+    background: conic-gradient(red calc(var(--progress) * 0.3), gray 0deg);
+  }
+  75% {
+    background: conic-gradient(red calc(var(--progress) * 0.25), gray 0deg);
+  }
+  80% {
+    background: conic-gradient(red calc(var(--progress) * 0.2), gray 0deg);
+  }
+  85% {
+    background: conic-gradient(red calc(var(--progress) * 0.15), gray 0deg);
+  }
+  90% {
+    background: conic-gradient(red calc(var(--progress) * 0.1), gray 0deg);
+  }
+  95% {
+    background: conic-gradient(red calc(var(--progress) * 0.05), gray 0deg);
+  }
+  100% {
+    background: conic-gradient(gray 0deg);
+  }
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+}
+.glass-effect2 {
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+}
+.glass-effect3 {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+}
+.glass-effect4 {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18.6px);
+  -webkit-backdrop-filter: blur(18.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.GlassEffectHover1:hover{
+  background: rgba(255, 255, 255, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+}
