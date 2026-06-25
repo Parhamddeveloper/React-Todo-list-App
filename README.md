@@ -24,6 +24,11 @@ You can Tag Tasks using emojis😎
 
 **https://react-todo-list-app-flame.vercel.app/**
 
+## ⚡lighthouse scores
+
+![Lighthouse scores](ReadMe%20attachments/Lighthouse%20Scores.png)
+
+
 ## ⬇️How To install?
 If you want to install this app and run it locally, please follow these steps:
 
