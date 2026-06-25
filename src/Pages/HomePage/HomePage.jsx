@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { TodoListContainer } from "../Components/TodoListContainer";
+import { TodoListContainer } from "../../Components/TodoListContainer";
 import { useDispatch, useSelector } from "react-redux";
-import { UpdateFilterStatus, UpdateSearchFilter } from "../Redux/Slice";
-import { Tips } from "../Components/Tips";
+import { UpdateFilterStatus, UpdateSearchFilter } from "../../Redux/Slice";
+import { Tips } from "../../Components/Tips";
 import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { TasksCompletedPercent } from "../Components/TasksCompletedPercent";
+import { TasksCompletedPercent } from "../../Components/TasksCompletedPercent";
 import { FaCaretDown, FaGithub } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 
