@@ -20,6 +20,10 @@ You can Tag Tasks using emojis😎
 
 ![Todo list Emoji Tag preview](ReadMe%20attachments/Emoji%20Preview.png)
 
+## 💻Live view
+
+**https://react-todo-list-app-flame.vercel.app/**
+
 ## ⬇️How To install?
 If you want to install this app and run it locally, please follow these steps:
 
