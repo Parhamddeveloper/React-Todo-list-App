@@ -1,26 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export const TaskDetailsPage = () => {
+  //useSelector
   const TodoList = useSelector((state) => state.todo.TodoList);
+  //TaskInformations
   const TaskId = useParams().taskid;
   const TaskInfo = TodoList.find((Task) => Task.id == TaskId);
+  //useNavigate
+  const Navigate = useNavigate();
+
+  //Back to homepage with escape key
+  useEffect(() => {
+    const BackToHomeKey = (e) => {
+      if (e.key == "Escape" || e.key == "esc") Navigate("/");
+    };
+    window.addEventListener("keydown", BackToHomeKey);
+    return () => {
+      window.removeEventListener("keydown", BackToHomeKey);
+    };
+  }, [Navigate]);
+
   return (
     <div className="max-w-[960px] m-auto relative my-8 px-3">
-      <Link to={"/"}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="size-10 absolute  text-white"
-        >
-          <path
-            fillRule="evenodd"
-            d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z"
-            clipRule="evenodd"
-          />
-        </svg>
+      <Link
+        to={"/"}
+        className="left-0  absolute text-xl flex gap-3 text-white ms-3 items-center"
+      >
+        <FaArrowLeftLong />
+        <p className="text-lg">
+          Back <span className="hidden lg:inline-block">(esc)</span>
+        </p>
       </Link>
       <h1 className="text-center text-white text-3xl font-bold">
         Task Details
