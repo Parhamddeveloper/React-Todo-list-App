@@ -52,7 +52,7 @@ npm run build
 ```
 npm run preview
 ```
-**Another note: you must open the app using this address to install it:**
+**Another note: if you want to use this app as PWA, you must open the app using this address:**
 
 **http://localhost:4173**
 ## Credits
