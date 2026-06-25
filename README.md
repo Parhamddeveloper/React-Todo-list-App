@@ -25,11 +25,11 @@ If you want to install this app and run it locally, please follow these steps:
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/parhamddeveloper/TodoApp
+git clone https://github.com/Parhamddeveloper/React-Todo-list-App
 ```
 ### 2. Navigate to the project directory
 ```
-cd TODOLIST
+cd React-Todo-list-App
 ```
 ### 3. Install dependencies
 ```
