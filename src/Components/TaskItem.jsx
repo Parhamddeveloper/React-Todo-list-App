@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { ActiveTodo } from "../Redux/Slice";
 import { EditTodoModal } from "./EditTodoModal";
 import { motion } from "framer-motion";
 import { TaskOptions } from "./TaskOptions";
-import { FaCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 import { TiPin } from "react-icons/ti";
 export const TaskItem = ({ data }) => {
   //states

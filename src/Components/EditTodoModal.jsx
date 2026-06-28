@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { EditTodo } from "../Redux/Slice";
 import { AnimatePresence, motion } from "framer-motion";
-import { TextField } from "@mui/material";
 import { toast } from "react-toastify";
 import EmojiPicker from "emoji-picker-react";
 import { RiEmojiStickerLine } from "react-icons/ri";
