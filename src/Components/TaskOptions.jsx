@@ -28,10 +28,14 @@ export const TaskOptions = ({
   //Handlers
   const DeleteHandler = () => {
     dispatch(DeleteTodo(id));
-    toast.success("Task Deleted successfully", {
-      position: "top-center",
+    toast.success("Task deleted successfully", {
       theme: "colored",
-      style: { background: "#766852" },
+      style: {
+        background: "rgba(255, 255, 255, 0.3)",
+        backdropFilter: "18px",
+        WebkitBackdropFilter: "18px",
+        boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+      },
     });
   };
   const ActiveTodoHandler = () => {
@@ -60,7 +64,7 @@ export const TaskOptions = ({
       PinTodo({
         id,
         IsPinned,
-      })
+      }),
     );
   }, [IsPinned]);
   useEffect(() => {
@@ -160,9 +164,7 @@ export const TaskOptions = ({
 
                     <span className="ms-2">
                       Mark as
-                      {IsCompleted === "Complete"
-                        ? " not done"
-                        : " done"}
+                      {IsCompleted === "Complete" ? " not done" : " done"}
                     </span>
                   </button>
                 </li>
@@ -187,7 +189,7 @@ export const TaskOptions = ({
                     className="flex items-center w-full"
                     onClick={PinHandler}
                   >
-                  <AiFillPushpin className="text-white text-2xl" />
+                    <AiFillPushpin className="text-white text-2xl" />
 
                     <span className="ms-2">{IsPinned ? "unpin" : "pin"}</span>
                   </button>

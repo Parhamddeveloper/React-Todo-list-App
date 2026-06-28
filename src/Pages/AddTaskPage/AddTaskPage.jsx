@@ -13,7 +13,6 @@ export const AddTaskPage = () => {
   //States
   const [Title, SetTitle] = useState("");
   const [Description, SetDescription] = useState("");
-  const [Status, SetStatus] = useState("Incomplete");
   const [IsEmojiPickerOpen, SetIsEmojiPickerOpen] = useState(false);
   const [DeadlineDate, SetDeadLineDate] = useState("");
   const [Emoji, SetEmoji] = useState("");
@@ -49,7 +48,7 @@ export const AddTaskPage = () => {
           id: uuid(),
           Title,
           Emoji,
-          Status,
+          Status : "Incomplete",
           Description,
           DeadlineDate,
           IsPinned: false,
