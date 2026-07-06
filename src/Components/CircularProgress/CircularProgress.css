@@ -1,0 +1,6 @@
+.circular-progress-bar {
+  fill: transparent;
+  stroke: #3b83f6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.35s ease-in-out; /* انیمیشن نرم هنگام تغییر درصد */
+}
