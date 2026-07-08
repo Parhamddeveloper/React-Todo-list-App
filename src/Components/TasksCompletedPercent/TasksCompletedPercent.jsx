@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import CircularProgress from "./CircularProgress/CircularProgress";
+import CircularProgress from "../CircularProgress/CircularProgress";
 
 export const TasksCompletedPercent = () => {
   //States
@@ -28,14 +28,6 @@ export const TasksCompletedPercent = () => {
       {TodoList.length > 0 && (
         <div className="bg-[#bb849332] rounded-3xl p-3 mt-9 flex glass-effect">
           <div className="w-[60px] relative h-[60px] flex  border rounded-full border-[#DBAFA0] items-center justify-center">
-            
-            {/* <CircularProgress
-              variant="determinate"
-              value={CompletedTasksPercent}
-              size={50}
-            className="absolute top-1/2 left-1/2"
-              style={{ transform: "translate(-50%,-50%) rotate(-90deg)" }}
-            /> */}
             <CircularProgress value={CompletedTasksPercent}/>
           </div>
 

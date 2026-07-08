@@ -5,7 +5,7 @@ const CircularProgress = ({ value }) => {
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
   const strokeDashoffset = circumference - (value / 100) * circumference;
-
+  const FlooredValue = Math.floor(value)
   return (
     <div
       className="flex items-center justify-center relative"
@@ -32,7 +32,7 @@ const CircularProgress = ({ value }) => {
       <span
         className={`font-bold absolute ${value == 100 && "text-green-500"}`}
       >
-        {value}%
+        {FlooredValue}%
       </span>
     </div>
   );

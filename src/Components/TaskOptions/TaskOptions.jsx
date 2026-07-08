@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { DeleteTodo, PinTodo } from "../Redux/Slice";
+import { DeleteTodo, PinTodo } from "../../Redux/Slice";
 import { toast } from "react-toastify";
 import { AnimatePresence, motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";

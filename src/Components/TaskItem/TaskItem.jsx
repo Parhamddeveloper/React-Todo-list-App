@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import { ActiveTodo } from "../Redux/Slice";
-import { EditTodoModal } from "./EditTodoModal";
+import { ActiveTodo } from "../../Redux/Slice";
+import { EditTodoModal } from "../EditTodoModal/EditTodoModal";
 import { motion } from "framer-motion";
-import { TaskOptions } from "./TaskOptions";
+import { TaskOptions } from "../TaskOptions/TaskOptions";
 import { FaCheckCircle } from "react-icons/fa";
 import { TiPin } from "react-icons/ti";
 export const TaskItem = ({ data }) => {

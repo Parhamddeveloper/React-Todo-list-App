@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { TaskItem } from "./TaskItem";
+import { TaskItem } from "../TaskItem/TaskItem";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 import { BsClipboard2X } from "react-icons/bs";

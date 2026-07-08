@@ -8,7 +8,8 @@ Todo list app with glass design built with React,Redux and tailwind and supports
 
 - <img src="https://skillicons.dev/icons?i=tailwind" height="25" valign="middle"/> **Tailwind**
 
-- <img src="https://skillicons.dev/icons?i=javascript" height="25" valign="middle"/> **Java script**
+- <img src="https://skillicons.dev/icons?i=javascript" height="25" valign="middle"/> **Javascript**
+
 
 ## 🚀App Features
 ### 📲PWA 
@@ -18,7 +19,7 @@ This app supports PWA. it means you can install it on your device and open it on
 ### 😮Tag tasks with emojis
 You can Tag Tasks using emojis😎
 
-![Todo list Emoji Tag preview](ReadMe%20attachments/Emoji%20Preview.png)
+![Todo list Emoji Tag preview](ReadMe%20attachments/Tag%20Tasks%20with%20Emoji.gif)
 
 ## 💻Live view
 
