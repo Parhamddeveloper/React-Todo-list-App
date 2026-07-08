@@ -33,7 +33,7 @@ export const TaskItem = ({ data }) => {
 
   //Active Todo Handler
   const ActiveTodoHandler = (e) => {
-    if (e.target !== EditBTNRef) {
+    if (e.target !== EditBTNRef.current) {
       if (IsCompleted === "Incomplete") {
         SetIsCompleted("Complete");
       } else if (IsCompleted === "Complete") {
@@ -241,12 +241,12 @@ export const TaskItem = ({ data }) => {
             )}
           </div>
         </div>
-        <div className="space-x-3 flex relative" ref={EditBTNRef}>
+        <div className="space-x-3 flex relative">
           <button
             className="text-3xl absolute right-[-15px] top-1/2 translate-y-[-50%] w-[45px] h-[35px] space-y-2"
             onClick={ShowMoreOptionsHandler}
+            ref={EditBTNRef}
           >
-            {/* <FiMoreVertical /> */}
             <div className="w-[5px] h-[5px] bg-[#49243E] rounded-full"></div>
             <div className="w-[5px] h-[5px] bg-[#49243E] rounded-full"></div>
             <div className="w-[5px] h-[5px] bg-[#49243E] rounded-full"></div>
